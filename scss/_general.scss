@@ -6,10 +6,6 @@ html{
 *::before{
     box-sizing: inherit;
 }
-body{
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-}
 
 .visually-hidden{
     clip: rect(1px, 1px, 1px, 1px);
@@ -20,10 +16,4 @@ body{
     overflow: hidden;
     padding: 0;
     position: absolute;
-}
-
-.container{
-    max-width: 1280px;
-    padding: 0 30px;
-    margin: auto;
 }
