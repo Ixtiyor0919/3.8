@@ -1,23 +1,22 @@
 var distanceForm = document.querySelector('.form');
-var distanceInput = document.querySelector('.form__input');
-var distanceFoot = document.querySelector('.form__foot');
-var distanceBicycle = document.querySelector('.form__bicycle');
-var distanceCar = document.querySelector('.form__car');
-var distancePlan = document.querySelector('.form__plan');
-var distanceFootMinutes = document.querySelector('.form__foot__minutes');
-var distanceBicycleMinutes = document.querySelector('.form__bicycle__minutes');
-var distanceCarMinutes = document.querySelector('.form__car__minutes');
-var distancePlanMinutes = document.querySelector('.form__plan__minutes');
+var distanceInput = distanceForm.querySelector('.form__input');
+var distanceFoot = distanceForm.querySelector('.form__foot');
+var distanceBicycle = distanceForm.querySelector('.form__bicycle');
+var distanceCar = distanceForm.querySelector('.form__car');
+var distancePlan = distanceForm.querySelector('.form__plan');
+var distanceFootMinutes = distanceForm.querySelector('.form__foot__minutes');
+var distanceBicycleMinutes = distanceForm.querySelector('.form__bicycle__minutes');
+var distanceCarMinutes = distanceForm.querySelector('.form__car__minutes');
+var distancePlanMinutes = distanceForm.querySelector('.form__plan__minutes');
 
-var onFoot = 3.6;
-var bicycle = 20.1;
-var car = 70;
-var plan = 800;
+    var onFoot = 3.6;
+    var bicycle = 20.1;
+    var car = 70;
+    var plan = 800;
     
     distanceForm.addEventListener('submit', function(evt) {
         evt.preventDefault();
         distanceInput.value.trim();
-        
         var distance = distanceInput.value;
         
         var footHour = Math.floor(distance / onFoot);
@@ -40,10 +39,10 @@ var plan = 800;
         distanceCarMinutes.textContent = carMinute + ' daqiqa ';
         distancePlanMinutes.textContent = planMinute + ' daqiqa ';
 
-    // distanceFoot.textContent = `${(distanceInput.value / (footHour))} soat`; 
-    // distanceBicycle.textContent = `${(distanceInput.value / (bicycle))} soat`; 
-    // distanceCar.textContent = `${(distanceInput.value / (carHour))} soat`; 
-    // distancePlan.textContent = `${(distanceInput.value / (planHour))} soat`;
+    // distanceFoot.textContent = `${Math.floor(onFoot / (onFoot))} soat`; 
+    // distanceBicycle.textContent = `${(distance / (bicycle))} soat`; 
+    // distanceCar.textContent = `${(distance / (carHour))} soat`; 
+    // distancePlan.textContent = `${(distance / (planHour))} soat`;
     
     
 
