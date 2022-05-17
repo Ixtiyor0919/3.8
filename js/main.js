@@ -27,12 +27,16 @@ var distancePlane = distanceForm.querySelector('.form__plan');
         distancePlane.textContent = calculateTime(distanceInput.value, plane);
 
         if (distanceInput.value <= 0 || isNaN(distanceInput.value)) {
-            distanceInput.classList.add("form__input--invalid")
-            distanceInput.classList.remove("form__input--valid")
+            distanceInput.classList.add("is-invalid")
+            distanceInput.classList.remove("is-valid")
+            distanceFoot.textContent = '';
+            distanceBicycle.textContent = '';
+            distanceCar.textContent = '';
+            distancePlane.textContent = '';
             return
         }else {
-            distanceInput.classList.add("form__input--valid")
-             distanceInput.classList.remove("form__input--invalid")
+            distanceInput.classList.add("is-valid")
+             distanceInput.classList.remove("is-invalid")
             return
         };
 
