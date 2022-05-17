@@ -8,6 +8,14 @@
         color: #61696d;
     }
     .form {
+        .form__input--valid {
+            background-color: rgb(78, 220, 30);
+            color: white;
+        }
+        .form__input--invalid {
+            background-color: rgb(228, 14, 14);
+            color: #dddddd;
+        }
         .form-cards {
             .card {
                 height: 246px;
@@ -20,8 +28,7 @@
                 .fa-solid {
                     font-size: 60px;
                 }
-                .form
-                .form__foot__minutes {
+                .form__foot, .form__bicycle, .form__car, .form__plan {
                     color: #666666;
                 }
             }
